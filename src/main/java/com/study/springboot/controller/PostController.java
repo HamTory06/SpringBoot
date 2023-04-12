@@ -22,9 +22,14 @@ public class PostController {
         return sb.toString();
     }
 
+    @PostMapping("member1")
+    public String postMemberDto1(@RequestBody MemberDto memberDto){
+        return memberDto.toString();
+    }
+
     @PostMapping(value = "/member2")
     public String postMemberDto(
-            @RequestParam MemberDto memberDto
+            @RequestBody MemberDto memberDto
     ){
         return memberDto.toString();
     }

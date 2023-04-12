@@ -5,7 +5,7 @@ import lombok.Data;
 public class MemberDto {
     private String name;
     private String email;
-    private String organization;
+        private String organization;
 
 
     public String getName(){

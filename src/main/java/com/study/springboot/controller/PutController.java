@@ -34,8 +34,9 @@ public class PutController {
     }
 
     @PutMapping(value = "/member3")
-    public ResponseEntity<MemberDto> postMemberDto3(@RequestBody MemberDto memberDto){
+    public ResponseEntity<MemberDto> postMemberDto3(@RequestBody MemberDto memberDto) {
         return ResponseEntity
+                //HttpStatus.ACCEPTED는 응답코드 202를 가지고 있다.
                 .status(HttpStatus.ACCEPTED)
                 .body(memberDto);
     }
