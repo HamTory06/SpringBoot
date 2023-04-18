@@ -34,4 +34,12 @@ public class PostController {
         return memberDto.toString();
     }
 
+    @PostMapping("/sum")
+    public int postSum(
+            @RequestParam int a,
+            @RequestParam int b
+    ){
+        return a*b;
+    }
+
 }
